@@ -1,0 +1,9 @@
+Johnson,1234,15
+Thomas,3452,10
+Smith,4235,9
+Williams,3247,12
+Brown,3563,0
+Jones,8943,32
+Davis,2346,1
+Martinez,3493,8
+Wilson,5684,23

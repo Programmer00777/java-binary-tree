@@ -1,5 +1,6 @@
 package tree;
 
+import com.sun.source.tree.Tree;
 import model.Passenger;
 
 import java.util.LinkedList;
@@ -57,6 +58,15 @@ public class BinaryTree {
             targetTree.addByWeight(node.passenger);
             pour(node.left, targetTree);
             pour(node.right, targetTree);
+        }
+        return targetTree;
+    }
+
+    public RedBlackTree convertToRedBlack(TreeNode node, RedBlackTree targetTree) {
+        if (node != null) {
+            targetTree.insert(node.passenger);
+            convertToRedBlack(node.left, targetTree);
+            convertToRedBlack(node.right, targetTree);
         }
         return targetTree;
     }
